@@ -11,20 +11,17 @@ print('number exceeds 1000')
 
 #Exercise 2
 
+num = 2
 
-
-prime = False
-
-for i in range(2, 100):
-        if (i / i) == 0:
-            prime = True
+while num <= 100:
+    check = 2
+    while check < num:
+        if num % check == 0:
             break
-if prime:
-    print(i, "is not a prime number")
-else:
-    print(i, "is a prime number")
-
-
+        check +=1
+    else:
+        print(num)
+    num+= 1
 
 # Exercise 3
 
