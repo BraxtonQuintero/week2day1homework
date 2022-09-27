@@ -25,7 +25,7 @@ while num <= 100:
 
 # Exercise 3
 
-person_age = 67 
+person_age = int(input('How old are you?'))
 
 if person_age < 18:
     print('kids')
