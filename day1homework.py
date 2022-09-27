@@ -2,30 +2,27 @@
 
 #list_num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
 
-for list_num in [1, 8, 27, 64, 125, 216, 343, 512, 719, 1000, 1331]:
-    if list_num >= 1001:
+for i in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]:
+    i = i*i*i
+    if i >= 1001:
         break
-    print(list_num)
+    print(i)
 print('number exceeds 1000')
-
-
-
 
 #Exercise 2
 
-num = 71
+
 
 prime = False
 
-if num > 1:
-    for i in range(2, num):
-        if (num / i) == 0:
+for i in range(2, 100):
+        if (i / i) == 0:
             prime = True
             break
 if prime:
-    print(num, "is not a prime number")
+    print(i, "is not a prime number")
 else:
-    print(num, "is a prime number")
+    print(i, "is a prime number")
 
 
 
